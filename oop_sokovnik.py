@@ -1,3 +1,5 @@
+# Sokovnik je programiran da izvrši 100 akcija ceđenja i ubacivanja jabuka, pri čemu se
+# ceđenje voća radi sa verovatnoćom 30%, a dodavanje jabuke sa verovatnoćom od 70%.
 from random import random, uniform
 from interfejs_sokovnik import*
 class Voce:
