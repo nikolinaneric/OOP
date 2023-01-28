@@ -89,16 +89,7 @@ def main():
                     broj_akcija = broj_ubacivanja + broj_cijedjenja
                     print("Izvršeno je "+str(broj_cijedjenja)+". cijeđenje soka.",str(broj_akcija)+"." + " akcija")
                     
-        
-        
-        
-
-
+     
     print("Kolicina iscijedjenog soka je "+str(round(sokovnik.kolicina_soka,2))+" litara.", "broj akcija " + str(broj_akcija))
-
-    
-                
-        
-   
 
 main()
