@@ -1,7 +1,7 @@
 # Sokovnik je programiran da izvrši 100 akcija ceđenja i ubacivanja jabuka, pri čemu se
 # ceđenje voća radi sa verovatnoćom 30%, a dodavanje jabuke sa verovatnoćom od 70%.
 from random import random, uniform
-from interfejs_sokovnik import*
+from interfejs_sokovnik import *
 class Voce:
     def __init__(self, naziv, tezina):
         self.naziv_vocke = naziv
@@ -74,7 +74,8 @@ def main():
             if sokovnik.dodaj_vocku(Jabuka("Jabuka",tezina,crvljivost)):
                 broj_ubacivanja = broj_ubacivanja +1
                 broj_akcija = broj_ubacivanja + broj_cijedjenja
-                print("Izvršeno je ubacivanje "+str(broj_ubacivanja)+". jabuke težine "+str(tezina)+" kg.", str(broj_akcija)+"." + " akcija")
+                print(f"Izvršeno je ubacivanje {broj_ubacivanja}. jabuke težine {tezina} kg. {broj_akcija}. akcija")
+
                 
             if sokovnik.preostali_prostor() <= 0:
                 print("Kolicina iscijedjenog soka je "+str(round(sokovnik.kolicina_soka,2))+" litara.")      
@@ -87,9 +88,9 @@ def main():
                     sokovnik.tezina_voca = 0
                     broj_cijedjenja = broj_cijedjenja +1
                     broj_akcija = broj_ubacivanja + broj_cijedjenja
-                    print("Izvršeno je "+str(broj_cijedjenja)+". cijeđenje soka.",str(broj_akcija)+"." + " akcija")
-                    
-     
-    print("Kolicina iscijedjenog soka je "+str(round(sokovnik.kolicina_soka,2))+" litara.", "broj akcija " + str(broj_akcija))
+                    print(f"Izvršeno je {broj_cijedjenja}. cijeđenje soka. {broj_akcija}. akcija")
+
+    print(f"Količina iscijeđenog soka je {round(sokovnik.kolicina_soka, 2)} litara. Broj akcija {broj_akcija}.")
+
 
 main()
