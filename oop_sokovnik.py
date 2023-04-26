@@ -2,6 +2,8 @@
 # ceđenje voća radi sa verovatnoćom 30%, a dodavanje jabuke sa verovatnoćom od 70%.
 from random import random, uniform
 from interfejs_sokovnik import *
+
+
 class Voce:
     def __init__(self, naziv, tezina):
         self.naziv_vocke = naziv
