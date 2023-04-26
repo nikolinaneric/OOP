@@ -78,7 +78,7 @@ def main():
 
                 
             if sokovnik.preostali_prostor() <= 0:
-                print("Kolicina iscijedjenog soka je "+str(round(sokovnik.kolicina_soka,2))+" litara.")      
+                print(f"Količina iscijeđenog soka je {round(sokovnik.kolicina_soka, 2)} litara.)     
                 raise Exception("PremasenKapacitet Expection")
                      
 
